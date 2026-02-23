@@ -1,0 +1,1939 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Happy Birthday Magie! 💗</title>
+<style>
+/* All your existing CSS remains exactly the same */
+body {
+  margin: 0;
+  font-family: "Poppins", sans-serif;
+  color: #555;
+  overflow: hidden;
+  background: linear-gradient(135deg, #ffe6f0 0%, #fff0f5 25%, #fff9fb 50%, #fff0f5 75%, #ffe6f0 100%);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+
+.screen {
+  display: none;
+  height: 100vh;
+  width: 100vw;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  position: relative;
+  padding: 20px;
+  box-sizing: border-box;
+}
+
+.active {
+  display: flex;
+}
+
+/* FIRST SCREEN STYLES */
+.first-screen {
+  background: linear-gradient(135deg, #ffb8d1 0%, #ffd1e0 50%, #ffe6f0 100%);
+  position: relative;
+  overflow: hidden;
+}
+
+.first-screen::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: 
+    radial-gradient(circle at 20% 80%, rgba(255, 255, 255, 0.2) 2%, transparent 20%),
+    radial-gradient(circle at 80% 20%, rgba(255, 255, 255, 0.2) 2%, transparent 20%),
+    radial-gradient(circle at 40% 40%, rgba(255, 255, 255, 0.15) 3%, transparent 30%),
+    radial-gradient(circle at 60% 60%, rgba(255, 255, 255, 0.15) 3%, transparent 30%);
+}
+
+.welcome-container {
+  background: rgba(255, 255, 255, 0.95);
+  padding: 40px 35px;
+  border-radius: 25px;
+  box-shadow: 
+    0 15px 40px rgba(255, 105, 180, 0.25),
+    0 0 0 12px #ffb6c1,
+    0 0 0 24px rgba(255, 255, 255, 0.4);
+  max-width: 550px;
+  width: 90%;
+  position: relative;
+  z-index: 10;
+  animation: floatContainer 3s ease-in-out infinite;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto;
+}
+
+@keyframes floatContainer {
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(-8px); }
+}
+
+.main-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  margin: 0 auto;
+}
+
+.centered-title {
+  color: #ff69b4;
+  font-size: 34px;
+  margin-bottom: 20px;
+  text-shadow: 2px 2px 0 rgba(255, 182, 193, 0.2);
+  text-align: center;
+  width: 100%;
+  line-height: 1.2;
+  font-weight: 600;
+}
+
+.centered-message {
+  font-size: 18px;
+  line-height: 1.7;
+  color: #666;
+  margin: 20px 0;
+  text-align: center;
+  width: 100%;
+  max-width: 500px;
+}
+
+.centered-message p {
+  margin: 12px 0;
+  padding: 10px 15px;
+  background: linear-gradient(to right, transparent, rgba(255, 182, 193, 0.08), transparent);
+  border-radius: 10px;
+  position: relative;
+}
+
+.message-highlight {
+  color: #ff1493;
+  font-weight: 600;
+  font-size: 19px;
+  text-shadow: 1px 1px 0 rgba(255, 182, 193, 0.2);
+  display: inline-block;
+  padding: 3px 10px;
+  background: linear-gradient(45deg, #ffb6c1, #fff);
+  border-radius: 6px;
+  margin: 2px;
+}
+
+.centered-decorative {
+  display: flex;
+  justify-content: center;
+  margin: 20px 0;
+  width: 100%;
+}
+
+.centered-decorative span {
+  font-size: 22px;
+  margin: 0 6px;
+  animation: gentleBounce 2s infinite;
+  opacity: 0.9;
+}
+
+@keyframes gentleBounce {
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(-4px); }
+}
+
+.centered-button {
+  margin-top: 25px;
+  padding: 14px 35px;
+  border: none;
+  border-radius: 25px;
+  background: linear-gradient(45deg, #ff69b4, #ffb6c1);
+  color: white;
+  font-size: 16px;
+  font-weight: 600;
+  cursor: pointer;
+  box-shadow: 
+    0 8px 20px rgba(255, 105, 180, 0.3),
+    0 0 0 2px white,
+    0 0 0 4px #ffb6c1;
+  transition: all 0.3s ease;
+  letter-spacing: 0.5px;
+  min-width: 200px;
+}
+
+.centered-button:hover {
+  transform: translateY(-3px);
+  box-shadow: 
+    0 12px 25px rgba(255, 105, 180, 0.35),
+    0 0 0 2px white,
+    0 0 0 4px #ff69b4;
+}
+
+.centered-button:active {
+  transform: translateY(1px);
+}
+
+/* FLOWER SCREEN STYLES */
+.flower-screen {
+  background: linear-gradient(135deg, #e8f5e8 0%, #f0fff0 100%);
+  position: relative;
+  overflow: hidden;
+}
+
+.flower-screen::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: 
+    radial-gradient(circle at 20% 30%, rgba(255, 182, 193, 0.1) 0%, transparent 50%),
+    radial-gradient(circle at 80% 70%, rgba(255, 215, 0, 0.1) 0%, transparent 50%),
+    radial-gradient(circle at 40% 80%, rgba(255, 255, 255, 0.1) 0%, transparent 50%);
+}
+
+.flowers-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 40px;
+  margin: 30px 0;
+  height: 450px;
+}
+
+.flower-item {
+  position: relative;
+  width: 280px;
+  cursor: pointer;
+  transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+
+.flower-item:hover {
+  transform: translateY(-10px);
+}
+
+.flower-item:hover .flower-image {
+  transform: scale(1.04);
+  box-shadow: 0 20px 45px rgba(0, 0, 0, 0.25);
+}
+
+.flower-image-container {
+  position: relative;
+  width: 280px;
+  height: 280px;
+  margin-bottom: 20px;
+  border-radius: 20px;
+  overflow: hidden;
+  box-shadow: 0 15px 30px rgba(0, 0, 0, 0.2);
+  transition: all 0.4s ease;
+  border: 4px solid white;
+}
+
+.flower-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: all 0.4s ease;
+}
+
+.flower-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: linear-gradient(to bottom, transparent 60%, rgba(0, 0, 0, 0.35));
+  display: flex;
+  align-items: flex-end;
+  padding: 18px;
+}
+
+.flower-number {
+  position: absolute;
+  top: -12px;
+  left: -12px;
+  background: #ff69b4;
+  color: white;
+  width: 35px;
+  height: 35px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 18px;
+  font-weight: bold;
+  box-shadow: 0 4px 10px rgba(255, 105, 180, 0.3);
+  z-index: 2;
+}
+
+.flower-title {
+  color: white;
+  font-size: 20px;
+  font-weight: 600;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.4);
+  letter-spacing: 0.5px;
+}
+
+.flower-message-card {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%) scale(0.9);
+  width: 450px;
+  max-width: 90vw;
+  background: rgba(255, 255, 255, 0.98);
+  border-radius: 22px;
+  padding: 35px;
+  box-shadow: 
+    0 25px 60px rgba(0, 0, 0, 0.3),
+    0 0 0 12px rgba(255, 182, 193, 0.25),
+    0 0 0 24px rgba(255, 255, 255, 0.15);
+  z-index: 2000;
+  opacity: 0;
+  visibility: hidden;
+  transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+  backdrop-filter: blur(8px);
+  border: 2px solid #ffb6c1;
+}
+
+.flower-message-card.active {
+  opacity: 1;
+  visibility: visible;
+  transform: translate(-50%, -50%) scale(1);
+}
+
+.message-header {
+  text-align: center;
+  margin-bottom: 25px;
+  padding-bottom: 18px;
+  border-bottom: 2px dashed #ffb6c1;
+}
+
+.message-title {
+  color: #ff69b4;
+  font-size: 24px;
+  font-weight: 600;
+  margin-bottom: 8px;
+  letter-spacing: 1px;
+}
+
+.message-number {
+  display: inline-block;
+  background: #ff69b4;
+  color: white;
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  margin-right: 8px;
+  line-height: 30px;
+  font-weight: bold;
+  font-size: 14px;
+}
+
+.message-content {
+  font-size: 16px;
+  line-height: 1.6;
+  color: #555;
+  margin-bottom: 25px;
+  text-align: left;
+  padding: 18px;
+  background: rgba(255, 246, 248, 0.4);
+  border-radius: 12px;
+  border-left: 3px solid #ff69b4;
+  white-space: pre-line;
+  font-family: 'Poppins', sans-serif;
+}
+
+.message-quotes {
+  margin-top: 25px;
+  padding-top: 18px;
+  border-top: 2px dashed #ffb6c1;
+}
+
+.quote-item {
+  font-size: 14px;
+  color: #777;
+  font-style: italic;
+  margin: 8px 0;
+  padding-left: 16px;
+  border-left: 2px solid #ffb6c1;
+  text-align: left;
+}
+
+.message-close {
+  margin-top: 25px;
+  padding: 10px 35px;
+  border: none;
+  border-radius: 22px;
+  background: linear-gradient(45deg, #ff69b4, #ffb6c1);
+  color: white;
+  font-size: 14px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  box-shadow: 0 6px 15px rgba(255, 105, 180, 0.25);
+}
+
+.message-close:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 10px 20px rgba(255, 105, 180, 0.3);
+}
+
+.overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.6);
+  z-index: 1999;
+  opacity: 0;
+  visibility: hidden;
+  transition: all 0.4s ease;
+}
+
+.overlay.active {
+  opacity: 1;
+  visibility: visible;
+}
+
+/* PHOTOS SLIDESHOW SCREEN */
+.photos-screen {
+  background: linear-gradient(135deg, #ffe6ff 0%, #f5f0ff 100%);
+  position: relative;
+  overflow: hidden;
+}
+
+.photos-screen::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: 
+    radial-gradient(circle at 20% 30%, rgba(255, 182, 193, 0.2) 0%, transparent 50%),
+    radial-gradient(circle at 80% 70%, rgba(255, 182, 255, 0.15) 0%, transparent 50%),
+    radial-gradient(circle at 40% 80%, rgba(255, 255, 255, 0.1) 0%, transparent 50%);
+}
+
+.photos-container {
+  background: rgba(255, 255, 255, 0.95);
+  padding: 40px;
+  border-radius: 30px;
+  box-shadow: 
+    0 25px 60px rgba(255, 105, 180, 0.3),
+    0 0 0 12px #ffb6c1,
+    0 0 0 24px rgba(255, 255, 255, 0.4);
+  max-width: 900px;
+  width: 95%;
+  position: relative;
+  z-index: 10;
+  animation: floatContainer 3s ease-in-out infinite;
+}
+
+.photos-header {
+  margin-bottom: 30px;
+}
+
+.photos-header h1 {
+  color: #ff69b4;
+  font-size: 32px;
+  margin-bottom: 10px;
+}
+
+.photos-header p {
+  color: #666;
+  font-size: 16px;
+}
+
+.photos-video-container {
+  position: relative;
+  width: 100%;
+  max-width: 800px;
+  margin: 0 auto 20px auto;
+  overflow: hidden;
+  border-radius: 20px;
+  box-shadow: 0 15px 40px rgba(0, 0, 0, 0.25);
+  background: #000;
+  aspect-ratio: 16 / 9;
+  border: 3px solid white;
+}
+
+.photos-video {
+  width: 100%;
+  height: 100%;
+  display: block;
+  border-radius: 17px;
+  background: #000;
+  object-fit: contain;
+}
+
+/* VIDEOS GALLERY SCREEN */
+.videos-screen {
+  background: linear-gradient(135deg, #e6fffa 0%, #f0ffff 100%);
+  position: relative;
+  overflow: hidden;
+}
+
+.videos-screen::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: 
+    radial-gradient(circle at 20% 30%, rgba(255, 182, 193, 0.15) 0%, transparent 50%),
+    radial-gradient(circle at 80% 70%, rgba(182, 255, 255, 0.15) 0%, transparent 50%),
+    radial-gradient(circle at 40% 80%, rgba(255, 255, 255, 0.1) 0%, transparent 50%);
+}
+
+.videos-container {
+  background: rgba(255, 255, 255, 0.95);
+  padding: 40px;
+  border-radius: 30px;
+  box-shadow: 
+    0 25px 60px rgba(255, 105, 180, 0.3),
+    0 0 0 12px #ffb6c1,
+    0 0 0 24px rgba(255, 255, 255, 0.4);
+  max-width: 900px;
+  width: 95%;
+  position: relative;
+  z-index: 10;
+  animation: floatContainer 3s ease-in-out infinite;
+}
+
+.videos-header {
+  margin-bottom: 30px;
+}
+
+.videos-header h1 {
+  color: #ff69b4;
+  font-size: 32px;
+  margin-bottom: 10px;
+}
+
+.videos-header p {
+  color: #666;
+  font-size: 16px;
+}
+
+/* FIXED GOOGLE DRIVE VIDEO EMBED */
+.videos-video-container {
+  position: relative;
+  width: 100%;
+  max-width: 800px;
+  margin: 20px auto 30px auto;
+  overflow: hidden;
+  border-radius: 20px;
+  box-shadow: 0 15px 40px rgba(0, 0, 0, 0.25);
+  background: #000;
+  aspect-ratio: 16 / 9;
+  border: 3px solid white;
+}
+
+.gdrive-video-wrapper {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  border-radius: 17px;
+}
+
+.gdrive-video-wrapper iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border: none;
+  border-radius: 17px;
+}
+
+.video-controls {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: linear-gradient(to top, rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.4) 70%, transparent);
+  padding: 15px 20px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-bottom-left-radius: 17px;
+  border-bottom-right-radius: 17px;
+  z-index: 20;
+  backdrop-filter: blur(2px);
+}
+
+.video-controls button {
+  background: #ff69b4;
+  border: none;
+  color: white;
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  font-size: 18px;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 15px rgba(255, 105, 180, 0.5);
+  border: 2px solid white;
+  font-weight: bold;
+}
+
+.video-controls button:hover {
+  background: #ff1493;
+  transform: scale(1.1);
+  box-shadow: 0 6px 20px rgba(255, 20, 147, 0.6);
+}
+
+.video-time {
+  color: white;
+  font-size: 15px;
+  font-weight: 600;
+  margin: 0 15px;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+  background: rgba(255, 105, 180, 0.3);
+  padding: 6px 15px;
+  border-radius: 30px;
+  letter-spacing: 0.5px;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  backdrop-filter: blur(2px);
+}
+
+/* MESSAGE SCREEN STYLES - FORMAL LETTER FORMAT */
+.message-screen {
+  background: linear-gradient(135deg, #fff0f5 0%, #fff9fb 100%);
+  position: relative;
+  overflow: hidden;
+}
+
+.message-screen::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: 
+    radial-gradient(circle at 20% 30%, rgba(255, 182, 193, 0.15) 0%, transparent 50%),
+    radial-gradient(circle at 80% 70%, rgba(255, 182, 193, 0.1) 0%, transparent 50%),
+    radial-gradient(circle at 40% 80%, rgba(255, 255, 255, 0.1) 0%, transparent 50%),
+    repeating-linear-gradient(45deg, transparent, transparent 50px, rgba(255, 182, 193, 0.05) 50px, rgba(255, 182, 193, 0.05) 51px);
+}
+
+.message-container {
+  background: rgba(255, 255, 255, 0.98);
+  padding: 40px 45px;
+  border-radius: 30px;
+  box-shadow: 
+    0 25px 60px rgba(255, 105, 180, 0.3),
+    0 0 0 15px #ffb6c1,
+    0 0 0 30px rgba(255, 255, 255, 0.4),
+    inset 0 0 30px rgba(255, 182, 193, 0.2);
+  max-width: 800px;
+  width: 90%;
+  position: relative;
+  z-index: 10;
+  animation: floatContainer 3s ease-in-out infinite;
+  border: 2px solid #ff69b4;
+  max-height: 85vh;
+  overflow-y: auto;
+}
+
+.message-container::-webkit-scrollbar {
+  width: 8px;
+}
+
+.message-container::-webkit-scrollbar-track {
+  background: #ffe6f0;
+  border-radius: 10px;
+}
+
+.message-container::-webkit-scrollbar-thumb {
+  background: #ff69b4;
+  border-radius: 10px;
+}
+
+.message-container::before {
+  content: '💌';
+  position: absolute;
+  top: -25px;
+  left: 50%;
+  transform: translateX(-50%);
+  background: #ff69b4;
+  color: white;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 24px;
+  box-shadow: 0 5px 15px rgba(255, 105, 180, 0.4);
+  z-index: 20;
+}
+
+.message-container::after {
+  content: '';
+  position: absolute;
+  top: 20px;
+  left: 20px;
+  right: 20px;
+  bottom: 20px;
+  border: 1px dashed #ffb6c1;
+  border-radius: 20px;
+  pointer-events: none;
+}
+
+/* FORMAL LETTER STYLES */
+.letter-date {
+  text-align: right;
+  font-family: 'Poppins', sans-serif;
+  color: #888;
+  font-size: 14px;
+  margin-bottom: 20px;
+  font-style: italic;
+  border-bottom: 1px solid #ffb6c1;
+  padding-bottom: 10px;
+}
+
+.letter-salutation {
+  font-size: 18px;
+  color: #ff69b4;
+  font-weight: 600;
+  margin-bottom: 25px;
+  text-align: left;
+  font-family: 'Poppins', sans-serif;
+  border-left: 4px solid #ff69b4;
+  padding-left: 15px;
+}
+
+.letter-body {
+  font-family: 'Poppins', sans-serif;
+  font-size: 16px;
+  line-height: 1.8;
+  color: #444;
+  text-align: left;
+  padding: 0 10px;
+}
+
+.letter-paragraph {
+  margin-bottom: 20px;
+  text-indent: 0;
+  text-align: justify;
+}
+
+.letter-paragraph:first-of-type {
+  margin-top: 0;
+}
+
+.letter-highlight {
+  color: #ff1493;
+  font-weight: 600;
+  background: linear-gradient(45deg, #ffe6f0, #fff);
+  padding: 2px 6px;
+  border-radius: 4px;
+  display: inline-block;
+}
+
+.letter-closing {
+  margin-top: 35px;
+  text-align: right;
+  font-style: italic;
+  border-top: 2px dashed #ffb6c1;
+  padding-top: 20px;
+}
+
+.letter-signature {
+  font-size: 18px;
+  color: #ff69b4;
+  font-weight: 600;
+  margin-top: 10px;
+  font-style: normal;
+}
+
+.letter-emoji-line {
+  text-align: center;
+  margin: 25px 0 10px;
+  font-size: 24px;
+  letter-spacing: 8px;
+}
+
+.letter-envelope {
+  text-align: center;
+  margin-bottom: 20px;
+  font-size: 20px;
+  color: #ff69b4;
+}
+
+.highlight-words {
+  color: #ff1493;
+  font-weight: 600;
+  background: linear-gradient(45deg, #ffe6f0, #fff);
+  padding: 2px 8px;
+  border-radius: 15px;
+  margin: 0 2px;
+  display: inline-block;
+  border: 1px solid #ffb6c1;
+  font-size: 16px;
+}
+
+.birthday-badge {
+  background: linear-gradient(135deg, #ff69b4, #ff1493);
+  color: white;
+  padding: 12px 25px;
+  border-radius: 50px;
+  display: inline-block;
+  font-size: 24px;
+  font-weight: bold;
+  margin: 5px 0 20px 0;
+  box-shadow: 0 10px 25px rgba(255, 105, 180, 0.4);
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+  animation: bounce 2s infinite;
+  border: 3px solid white;
+}
+
+@keyframes bounce {
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(-5px); }
+}
+
+.message-quote-box {
+  background: linear-gradient(135deg, #ffe6f0, #fff0f5);
+  padding: 20px;
+  border-radius: 18px;
+  margin: 25px 0;
+  border: 2px solid #ffb6c1;
+  position: relative;
+  text-align: center;
+}
+
+.message-quote-box::before {
+  content: '"';
+  position: absolute;
+  top: -5px;
+  left: 10px;
+  font-size: 50px;
+  color: #ff69b4;
+  opacity: 0.2;
+  font-family: serif;
+}
+
+.message-quote-box::after {
+  content: '"';
+  position: absolute;
+  bottom: -20px;
+  right: 10px;
+  font-size: 50px;
+  color: #ff69b4;
+  opacity: 0.2;
+  font-family: serif;
+}
+
+.message-actions {
+  margin-top: 25px;
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+
+.message-btn {
+  padding: 12px 35px;
+  border: none;
+  border-radius: 40px;
+  background: linear-gradient(45deg, #ff69b4, #ff1493);
+  color: white;
+  font-size: 16px;
+  font-weight: 600;
+  cursor: pointer;
+  box-shadow: 
+    0 8px 20px rgba(255, 105, 180, 0.4),
+    0 0 0 2px white,
+    0 0 0 5px #ffb6c1;
+  transition: all 0.3s ease;
+  letter-spacing: 0.5px;
+  min-width: 200px;
+  position: relative;
+  z-index: 1000;
+}
+
+.message-btn:hover {
+  transform: translateY(-3px);
+  box-shadow: 
+    0 12px 25px rgba(255, 105, 180, 0.5),
+    0 0 0 2px white,
+    0 0 0 6px #ff69b4;
+}
+
+/* Common Info Styles */
+.common-info {
+  margin-top: 25px;
+  padding: 20px;
+  background: rgba(255, 246, 248, 0.6);
+  border-radius: 15px;
+  border: 2px dashed #ffb6c1;
+}
+
+.common-info p {
+  color: #666;
+  margin: 10px 0;
+  font-size: 14px;
+}
+
+.common-emoji {
+  display: flex;
+  justify-content: center;
+  margin: 20px 0;
+  gap: 15px;
+  font-size: 24px;
+}
+
+.common-emoji span {
+  animation: gentleBounce 2s infinite;
+  animation-delay: calc(var(--i) * 0.2s);
+}
+
+/* OTHER STYLES */
+h1 {
+  color: #ff69b4;
+  font-size: 32px;
+  margin-bottom: 20px;
+  text-shadow: 2px 2px 0 rgba(255, 182, 193, 0.2);
+  position: relative;
+  display: inline-block;
+  padding-bottom: 10px;
+}
+
+h1::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 25%;
+  width: 50%;
+  height: 3px;
+  background: linear-gradient(90deg, transparent, #ff69b4, transparent);
+}
+
+.progress {
+  position: fixed;
+  bottom: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 100;
+}
+
+.dot {
+  height: 8px;
+  width: 8px;
+  background: #ddd;
+  border-radius: 50%;
+  display: inline-block;
+  margin: 2px;
+}
+
+.dot.active {
+  background: #ff69b4;
+}
+
+.mute {
+  position: fixed;
+  top: 20px;
+  right: 20px;
+  cursor: pointer;
+  font-size: 20px;
+  background: rgba(255, 255, 255, 0.9);
+  border-radius: 50%;
+  padding: 8px;
+  z-index: 1000;
+  box-shadow: 0 4px 12px rgba(255, 105, 180, 0.15);
+  width: 40px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Other screens */
+input, textarea {
+  padding: 10px;
+  border-radius: 12px;
+  border: 2px solid #ffb6c1;
+  width: 230px;
+  font-size: 15px;
+  margin: 8px;
+  background: rgba(255, 255, 255, 0.9);
+}
+
+textarea {
+  height: 100px;
+  resize: none;
+}
+
+.photos img {
+  width: 230px;
+  border-radius: 15px;
+  box-shadow: 0 0 12px #f7b7c7;
+  margin: 18px;
+}
+
+.button-container {
+  display: flex;
+  gap: 8px;
+}
+
+button {
+  margin-top: 18px;
+  padding: 12px 35px;
+  border: none;
+  border-radius: 25px;
+  background: linear-gradient(45deg, #ff69b4, #ffb6c1);
+  color: white;
+  font-size: 15px;
+  font-weight: 600;
+  cursor: pointer;
+  box-shadow: 
+    0 6px 15px rgba(255, 105, 180, 0.25),
+    0 0 0 2px white,
+    0 0 0 4px #ffb6c1;
+  transition: all 0.3s ease;
+  letter-spacing: 0.5px;
+  position: relative;
+  z-index: 1000;
+}
+
+button:hover {
+  transform: translateY(-2px);
+  box-shadow: 
+    0 10px 20px rgba(255, 105, 180, 0.3),
+    0 0 0 2px white,
+    0 0 0 4px #ff69b4;
+}
+
+button:active {
+  transform: translateY(1px);
+}
+
+/* Fix for screen 2, 3 */
+#screen2 > div,
+#screen3 > div {
+  background: rgba(255, 255, 255, 0.95);
+  padding: 40px;
+  border-radius: 25px;
+  box-shadow: 
+    0 20px 50px rgba(255, 105, 180, 0.2),
+    0 0 0 8px #ffb6c1;
+  max-width: 500px;
+}
+
+/* FINAL SCREEN STYLES */
+.final-screen {
+  background: linear-gradient(135deg, #ffe6f0 0%, #ffd1e0 50%, #ffb8d1 100%);
+  position: relative;
+}
+
+.final-screen::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: 
+    radial-gradient(circle at 20% 30%, rgba(255, 255, 255, 0.3) 0%, transparent 50%),
+    radial-gradient(circle at 80% 70%, rgba(255, 255, 255, 0.2) 0%, transparent 50%),
+    repeating-linear-gradient(45deg, transparent, transparent 30px, rgba(255, 255, 255, 0.1) 30px, rgba(255, 255, 255, 0.1) 31px);
+}
+
+.final-container {
+  background: rgba(255, 255, 255, 0.95);
+  padding: 50px 40px;
+  border-radius: 30px;
+  box-shadow: 
+    0 25px 60px rgba(255, 105, 180, 0.3),
+    0 0 0 12px #ffb6c1,
+    0 0 0 24px rgba(255, 255, 255, 0.4);
+  max-width: 600px;
+  width: 90%;
+  position: relative;
+  z-index: 10;
+  animation: floatContainer 3s ease-in-out infinite;
+}
+
+.final-heart {
+  font-size: 60px;
+  margin: 20px 0;
+  animation: heartbeat 1.5s infinite;
+}
+
+.final-message {
+  font-size: 18px;
+  line-height: 1.7;
+  color: #666;
+  padding: 25px;
+  background: rgba(255, 246, 248, 0.6);
+  border-radius: 20px;
+  border: 2px dashed #ffb6c1;
+  margin: 20px 0;
+}
+
+.final-quote {
+  margin-top: 30px;
+  font-style: italic;
+  color: #ff69b4;
+  font-size: 16px;
+  padding: 15px;
+  background: linear-gradient(45deg, #ffb6c1, #fff);
+  border-radius: 10px;
+  display: inline-block;
+}
+
+.final-emoji {
+  display: flex;
+  justify-content: center;
+  margin: 25px 0;
+  gap: 15px;
+  font-size: 28px;
+}
+
+.final-emoji span {
+  animation: gentleBounce 2s infinite;
+  animation-delay: calc(var(--i) * 0.2s);
+}
+
+.continue-button-fixed {
+  margin-top: 40px !important;
+  position: relative !important;
+  z-index: 1000 !important;
+}
+
+.actions-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 15px;
+  margin: 30px 0;
+}
+
+.action-btn {
+  padding: 12px 30px;
+  border: none;
+  border-radius: 20px;
+  background: linear-gradient(45deg, #ff69b4, #ffb6c1);
+  color: white;
+  font-size: 14px;
+  font-weight: 600;
+  cursor: pointer;
+  box-shadow: 0 4px 15px rgba(255, 105, 180, 0.25);
+  transition: all 0.3s ease;
+  min-width: 150px;
+}
+
+.action-btn:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 8px 20px rgba(255, 105, 180, 0.35);
+}
+
+.action-btn.secondary {
+  background: linear-gradient(45deg, #ffb6c1, #ffd1e0);
+}
+
+.action-btn.tertiary {
+  background: linear-gradient(45deg, #ffd1e0, #ffe6f0);
+  color: #ff69b4;
+}
+
+@media (max-width: 768px) {
+  .photos-video-container,
+  .videos-video-container {
+    max-width: 100%;
+  }
+  
+  .video-controls button {
+    width: 36px;
+    height: 36px;
+    font-size: 16px;
+  }
+  
+  .video-time {
+    font-size: 13px;
+    padding: 4px 8px;
+  }
+  
+  .message-container {
+    padding: 25px 20px;
+  }
+  
+  .birthday-badge {
+    font-size: 20px;
+    padding: 10px 20px;
+  }
+  
+  .letter-body {
+    font-size: 15px;
+  }
+}
+</style>
+</head>
+<body>
+
+<!-- MUSIC -->
+<audio id="bgMusic" loop autoplay>
+  <source src="Simoy - Rob Deniel  100 Awit Para Kay Stella (Official Lyric Video).mp3" type="audio/mpeg">
+</audio>
+
+<!-- FALLBACK: Hidden audio element -->
+<audio id="fallbackMusic" loop style="display:none">
+  <source src="" type="audio/mpeg">
+</audio>
+
+<!-- FALLBACK: Manual play button for mobile browsers -->
+<div class="music-fallback" style="position:fixed; bottom:20px; left:20px; z-index:9999; display:none;" id="musicFallback">
+  <button onclick="forcePlayMusic()" style="background:#ff69b4; color:white; border:none; border-radius:50px; padding:8px 15px; font-size:14px; cursor:pointer;">
+    🎵 Play Music
+  </button>
+</div>
+
+<div class="mute" onclick="toggleMusic()">🔊</div>
+
+<!-- STEP 1 - WELCOME SCREEN -->
+<div class="screen active first-screen" id="screen1">
+  <div class="welcome-container">
+    <div class="main-content">
+      <div class="centered-decorative">
+        <span>🌸</span>
+        <span>💕</span>
+        <span>✨</span>
+        <span>💖</span>
+        <span>🌸</span>
+      </div>
+      
+      <h1 class="centered-title">Hello Magie! 💗</h1>
+      
+      <div class="centered-message">
+        <p>Hii <span class="message-highlight">magie</span>! Kumusta ka?</p>
+        <p>I hope you're okaay today 💫</p>
+        <p>You always did great and ang ganda ganda mo <span class="message-highlight">magie</span> ✨</p>
+        <p>And this special surprise is just for you...</p>
+      </div>
+      
+      <div class="centered-decorative">
+        <span>💝</span>
+        <span>🎀</span>
+        <span>🎁</span>
+        <span>🎀</span>
+        <span>💝</span>
+      </div>
+      
+      <button class="centered-button" onclick="nextScreen()">Start the Surprise 🎁</button>
+    </div>
+  </div>
+</div>
+
+<!-- STEP 2 -->
+<div class="screen" id="screen2">
+  <div>
+    <h1>Put your name here ✍️</h1>
+    <input id="nameInput" placeholder="Your name">
+    <button onclick="saveName()">Continue</button>
+  </div>
+</div>
+
+<!-- STEP 3 -->
+<div class="screen" id="screen3">
+  <div>
+    <h1 id="bdayText"></h1>
+    <p>🎂🎈🎊</p>
+    <button onclick="nextScreen()">Next</button>
+  </div>
+</div>
+
+<!-- STEP 4 - GERBERA FLOWERS SCREEN -->
+<div class="screen flower-screen" id="screen4">
+  <div style="width: 100%; max-width: 1100px;">
+    <h1>Special Gerberas for You 🌸</h1>
+    <p style="margin-bottom: 25px; color: #666; font-size: 16px;">Click each picture to reveal its special message! 🥰</p>
+    
+    <div class="flowers-container">
+      <!-- Pink Gerbera -->
+      <div class="flower-item" onclick="showFlowerMessage(1)">
+        <div class="flower-number">1</div>
+        <div class="flower-image-container">
+          <img class="flower-image" src="Pink.jpg" alt="Pink Gerbera">
+          <div class="flower-overlay">
+            <div class="flower-title">Gratitude</div>
+          </div>
+        </div>
+        <p style="color: #666; font-size: 15px;">Pink Gerbera - Click me! 🌸</p>
+      </div>
+      
+      <!-- Yellow Gerbera -->
+      <div class="flower-item" onclick="showFlowerMessage(2)">
+        <div class="flower-number">2</div>
+        <div class="flower-image-container">
+          <img class="flower-image" src="Yellow.jpg" alt="Yellow Gerbera">
+          <div class="flower-overlay">
+            <div class="flower-title">Friendship</div>
+          </div>
+        </div>
+        <p style="color: #666; font-size: 15px;">Yellow Gerbera - Click me! 🌼</p>
+      </div>
+      
+      <!-- Red Gerbera -->
+      <div class="flower-item" onclick="showFlowerMessage(3)">
+        <div class="flower-number">3</div>
+        <div class="flower-image-container">
+          <img class="flower-image" src="Red.jpg" alt="Red Gerbera">
+          <div class="flower-overlay">
+            <div class="flower-title">Deep love</div>
+          </div>
+        </div>
+        <p style="color: #666; font-size: 15px;">Red Gerbera - Click me! ❤️</p>
+      </div>
+    </div>
+    
+    <button class="continue-button-fixed" onclick="nextScreen()">Continue to Photo Slideshow 📸</button>
+  </div>
+</div>
+
+<!-- FLOWER MESSAGE POPUP -->
+<div class="overlay" id="overlay" onclick="closeFlowerMessage()"></div>
+
+<div class="flower-message-card" id="flowerMessageCard">
+  <div class="message-header">
+    <div class="message-title"><span class="message-number" id="flowerMessageNumber">1</span> <span id="flowerMessageTitle">Gratitude</span></div>
+    <p style="color: #777; font-size: 14px;">Special Message Revealed! 🥰</p>
+  </div>
+  
+  <div class="message-content" id="flowerMessageContent">
+    This pink gerbera symbolizes my deepest gratitude for having you in my life. Thank you for all the wonderful moments and memories! 💖
+  </div>
+  
+  <div class="message-quotes" id="flowerMessageQuotes">
+    <div class="quote-item">"Thank you for being an amazing friend"</div>
+    <div class="quote-item">"I appreciate everything you do"</div>
+    <div class="quote-item">"You make life brighter"</div>
+  </div>
+  
+  <button class="message-close" onclick="closeFlowerMessage()">Close Message</button>
+</div>
+
+<!-- STEP 5 - PICTURE SLIDESHOW -->
+<div class="screen photos-screen" id="screen5">
+  <div class="photos-container">
+    <div class="photos-header">
+      <h1>Our Beautiful Moments 📸</h1>
+      <p>Watch this special photo slideshow of our memories...</p>
+    </div>
+    
+    <!-- Video Slideshow -->
+    <div class="photos-video-container">
+      <video class="photos-video" id="photoSlideshowVideo" preload="metadata" controls controlsList="nodownload">
+        <source src="vid 6.mp4" type="video/mp4">
+        Your browser does not support the video tag.
+      </video>
+      
+      <div class="video-controls">
+        <button id="photosPlayBtn" onclick="togglePhotoVideo()">▶</button>
+        <span class="video-time" id="photosTime">0:00 / 0:00</span>
+        <button onclick="restartPhotoVideo()">↻</button>
+      </div>
+    </div>
+    
+    <!-- Photos Info -->
+    <div class="common-info">
+      <p>🎬 <strong>Note:</strong> This is a special slideshow of our beautiful memories together</p>
+      <p>💕 Click play to watch the photos with music and effects</p>
+    </div>
+    
+    <div class="common-emoji">
+      <span style="--i:0">📷</span>
+      <span style="--i:1">🌸</span>
+      <span style="--i:2">💖</span>
+      <span style="--i:3">✨</span>
+      <span style="--i:4">🌟</span>
+    </div>
+    
+    <button class="message-btn" onclick="nextScreen()">Next: Special Video 🎥</button>
+  </div>
+</div>
+
+<!-- STEP 6 - SPECIAL VIDEO (GOOGLE DRIVE) - FIXED VERSION -->
+<div class="screen videos-screen" id="screen6">
+  <div class="videos-container">
+    <div class="videos-header">
+      <h1>Special Video Message 🎥</h1>
+      <p>Watch this heartfelt video message just for you...</p>
+    </div>
+    
+    <!-- FIXED Google Drive Video Embed -->
+    <div class="videos-video-container">
+      <div class="gdrive-video-wrapper">
+        <!-- Direct Google Drive embed using /preview (CORRECT FORMAT) -->
+        <iframe 
+          src="https://drive.google.com/file/d/1tY3ohtuDaRLQ7WAodUEP2YPbxAMvz7Ao/preview" 
+          allow="autoplay; encrypted-media" 
+          allowfullscreen>
+        </iframe>
+      </div>
+    </div>
+    
+    <!-- Alternative direct download link if iframe doesn't work -->
+    <div style="margin: 15px 0;">
+      <a href="https://drive.google.com/file/d/1tY3ohtuDaRLQ7WAodUEP2YPbxAMvz7Ao/view?usp=drive_link" 
+         target="_blank" 
+         style="display: inline-block; padding: 10px 25px; background: #ff69b4; color: white; text-decoration: none; border-radius: 25px; font-weight: 600; box-shadow: 0 4px 15px rgba(255,105,180,0.3);">
+        📹 Open Video in Google Drive
+      </a>
+    </div>
+    
+    <!-- Videos Info -->
+    <div class="common-info">
+      <p>🎥 <strong>Note:</strong> This video contains a special birthday message</p>
+      <p>💖 Made with lots of love and care for your special day</p>
+      <p>🔗 If video doesn't load, click the button above to open in Google Drive</p>
+      <p>✅ <strong>Fixed:</strong> Video should now play directly in the page!</p>
+    </div>
+    
+    <div class="common-emoji">
+      <span style="--i:0">🎬</span>
+      <span style="--i:1">🎞️</span>
+      <span style="--i:2">💕</span>
+      <span style="--i:3">✨</span>
+      <span style="--i:4">🎁</span>
+    </div>
+    
+    <button class="message-btn" onclick="nextScreen()">Next: Personal Message 💌</button>
+  </div>
+</div>
+
+<!-- STEP 7 - YOUR PERSONAL MESSAGE - FORMAL LETTER FORMAT WITH EDITED DATE -->
+<div class="screen message-screen" id="screen7">
+  <div class="message-container">
+    <h1>My Special Message for You 💌</h1>
+    
+    <div class="birthday-badge" id="birthdayName">
+      Happy 21st Birthday, Magie! 🎉
+    </div>
+    
+    <!-- FORMAL LETTER FORMAT WITH EDITED DATE -->
+    <div class="letter-date">
+      February 19, 2026
+    </div>
+    
+    <div class="letter-salutation">
+      Dear <span class="letter-highlight" id="userName">Magie</span>,
+    </div>
+    
+    <div class="letter-body">
+      <p class="letter-paragraph">
+        <span class="letter-highlight">Happy, happy birthday, my dearest friend!</span> On this special day, I want you to know how truly grateful I am to have you in my life. Even with your busy schedule and duty today, I hope you still find moments of joy and celebration. 🎂🎉
+      </p>
+      
+      <p class="letter-paragraph">
+        I am so <span class="letter-highlight">proud of you</span>—of your dedication, your perseverance, and the way you handle everything with grace. Ang sipag at tiyaga mo, nakakabilib talaga. You inspire me more than you know. 💪
+      </p>
+      
+      <p class="letter-paragraph">
+        Thank you for being such a <span class="letter-highlight">wonderful friend</span>. Sa mga tawanan, kwentuhan, at maging sa mga problema—nandiyan ka lagi. I treasure every moment we've shared, and I look forward to many more. Maraming salamat sa lahat. 😊
+      </p>
+      
+      <p class="letter-paragraph">
+        My prayer for you today is simple: may you be <span class="letter-highlight">truly happy</span>. May you receive everything you've been wishing for—not just today, but in all the days to come. <span class="letter-highlight">You deserve nothing but the best</span> because you are one of the most genuine and beautiful souls I know. ✨
+      </p>
+      
+      <p class="letter-paragraph">
+        I know we don't always get to see each other or talk as often as we'd like, but please <span class="letter-highlight">always remember that I'm here</span>. Whether you need someone to listen, to help, or simply to be with you—I am just a message away. Kahit saan, sasamahan kita. 🤗
+      </p>
+      
+      <p class="letter-paragraph">
+        <span class="letter-highlight">Continue chasing your dreams</span>, Magie. You've come so far, and the sacrifices you've made will surely lead you to where you want to be. I believe in you, and I know you won't stop until you achieve everything you've set your heart on. 💪✨
+      </p>
+      
+      <p class="letter-paragraph">
+        So here's to you on your <span class="letter-highlight">21st birthday</span>—may this new chapter bring you more blessings, good health, and endless happiness. Enjoy your day to the fullest! Muli, <span class="letter-highlight">Happy Birthday!</span> 🎂🎈🎉
+      </p>
+      
+      <div class="message-quote-box">
+        <span style="font-size: 20px; color: #ff1493; font-weight: 600;">Te amo, my dear friend! 💕</span>
+        <p style="margin: 10px 0 0; font-style: italic;">Always moving forward, always shining bright.</p>
+      </div>
+      
+      <div class="letter-emoji-line">
+        🎂 🎉 🎈 🎁 💗 ✨ 💕
+      </div>
+    </div>
+    
+    <div class="letter-closing">
+      With all my love and sincerest friendship,<br>
+      <span class="letter-signature">Your Forever Friend</span> 
+      <span style="font-size: 22px; margin-left: 8px;">💖</span>
+    </div>
+    
+    <button class="message-btn" onclick="nextScreen()">Next: Final ✨</button>
+  </div>
+</div>
+
+<!-- STEP 8 - FINAL SCREEN -->
+<div class="screen final-screen" id="screen8">
+  <div class="final-container">
+    <h1 id="finalText">Thank You, Magie! 💖</h1>
+    
+    <div class="final-heart">💕</div>
+    
+    <div class="final-message" id="finalMessage">
+      Thank you for experiencing this special birthday surprise! I hope it brought a smile to your face and warmth to your heart. Always remember that you are an amazing person who deserves all the happiness in the world! 🥰✨
+      
+      <p style="margin-top: 20px; font-size: 20px; color: #ff69b4;">
+        Happy 21st Birthday, Magie! 🎂🎉
+      </p>
+    </div>
+    
+    <div class="final-emoji">
+      <span style="--i:0">🌸</span>
+      <span style="--i:1">💕</span>
+      <span style="--i:2">✨</span>
+      <span style="--i:3">🎂</span>
+      <span style="--i:4">🎁</span>
+    </div>
+    
+    <div class="final-quote">
+      "The best is yet to come for you!" 💫
+    </div>
+    
+    <div style="margin-top: 30px;">
+      <button class="message-btn" onclick="location.reload()">Replay from Start 🔄</button>
+    </div>
+  </div>
+</div>
+
+<!-- PROGRESS -->
+<div class="progress">
+  <span class="dot active"></span>
+  <span class="dot"></span>
+  <span class="dot"></span>
+  <span class="dot"></span>
+  <span class="dot"></span>
+  <span class="dot"></span>
+  <span class="dot"></span>
+  <span class="dot"></span>
+</div>
+
+<script>
+// GLOBAL VARIABLES
+let currentScreen = 0;
+let userName = "";
+let screens = [];
+let dots = [];
+let music = null;
+let fallbackMusic = null;
+let isPopupOpen = false;
+
+// VIDEO VARIABLES
+let photoVideo = null;
+
+// FLOWER MESSAGES
+const flowerMessages = {
+  1: {
+    number: 1,
+    title: "Gratitude",
+    content: `This pink gerbera symbolizes my deepest gratitude for having you in my life. Thank you for all the wonderful moments and memories! 💖`,
+    quotes: [
+      '"Thank you for being an amazing friend"',
+      '"I appreciate everything you do"',
+      '"You make life brighter"'
+    ]
+  },
+  2: {
+    number: 2,
+    title: "Friendship",
+    content: `This yellow gerbera represents our beautiful friendship. Like sunshine, you brighten my days and bring joy wherever you go! 🌞`,
+    quotes: [
+      '"True friendship is a treasure"',
+      '"You are an amazing friend"',
+      '"Thank you for always being there"'
+    ]
+  },
+  3: {
+    number: 3,
+    title: "Deep love",
+    content: `This red gerbera signifies deep love and affection. You mean so much to me, and I cherish every moment we share together! ❤️`,
+    quotes: [
+      '"You are loved more than you know"',
+      '"My life is better with you in it"',
+      '"Thank you for being you"'
+    ]
+  }
+};
+
+// INITIALIZE EVERYTHING WHEN PAGE LOADS
+window.onload = function() {
+  console.log("Initializing birthday surprise...");
+  
+  // Initialize DOM elements
+  screens = document.querySelectorAll(".screen");
+  dots = document.querySelectorAll(".dot");
+  music = document.getElementById("bgMusic");
+  fallbackMusic = document.getElementById("fallbackMusic");
+  
+  console.log("Found screens:", screens.length);
+  console.log("Found dots:", dots.length);
+  
+  // Set first screen as active
+  if (screens.length > 0) {
+    screens[currentScreen].classList.add("active");
+    dots[currentScreen].classList.add("active");
+  }
+  
+  // Add event listener to close popup when clicking overlay
+  const overlay = document.getElementById('overlay');
+  if (overlay) {
+    overlay.addEventListener('click', function(e) {
+      if (e.target === overlay) {
+        closeFlowerMessage();
+      }
+    });
+  }
+  
+  // Add event listener to close button
+  const closeBtn = document.querySelector('.message-close');
+  if (closeBtn) {
+    closeBtn.addEventListener('click', closeFlowerMessage);
+  }
+  
+  // Add specific event listener for flowers screen continue button
+  const flowersContinueBtn = document.querySelector('#screen4 .continue-button-fixed');
+  if (flowersContinueBtn) {
+    console.log("Found flowers continue button, adding event listener");
+    flowersContinueBtn.addEventListener('click', function(e) {
+      console.log("Flowers continue button clicked!");
+      e.stopPropagation();
+      nextScreen();
+    });
+  }
+  
+  // Initialize videos when we get to those screens
+  setupVideos();
+  
+  // Try to play music automatically
+  tryAutoPlayMusic();
+};
+
+// Try to autoplay music
+function tryAutoPlayMusic() {
+  if (music) {
+    music.volume = 0.5;
+    
+    // Try to play
+    music.play().catch(error => {
+      console.log("Autoplay failed, showing fallback button:", error);
+      // Show fallback button
+      document.getElementById('musicFallback').style.display = 'block';
+    });
+  }
+}
+
+// Force play music on user interaction
+function forcePlayMusic() {
+  if (music) {
+    music.play();
+    document.getElementById('musicFallback').style.display = 'none';
+  }
+  
+  // Also try fallback if main fails
+  if (fallbackMusic) {
+    fallbackMusic.play().catch(e => console.log("Fallback also failed"));
+  }
+}
+
+// SET UP VIDEOS
+function setupVideos() {
+  // Get video elements
+  photoVideo = document.getElementById('photoSlideshowVideo');
+  
+  // Set up photo video
+  if (photoVideo) {
+    // Remove default controls since we have custom controls
+    photoVideo.controls = false;
+    
+    photoVideo.addEventListener('timeupdate', updatePhotoVideoTime);
+    photoVideo.addEventListener('loadedmetadata', function() {
+      updatePhotoVideoTime();
+    });
+    photoVideo.addEventListener('ended', function() {
+      document.getElementById('photosPlayBtn').innerHTML = '▶';
+    });
+  }
+}
+
+// VIDEO FUNCTIONS FOR PHOTO SLIDESHOW
+function togglePhotoVideo() {
+  if (!photoVideo) return;
+  
+  if (photoVideo.paused) {
+    photoVideo.play();
+    document.getElementById('photosPlayBtn').innerHTML = '⏸';
+    
+    // Pause background music when video plays
+    if (music && !music.paused) {
+      music.pause();
+    }
+  } else {
+    photoVideo.pause();
+    document.getElementById('photosPlayBtn').innerHTML = '▶';
+    
+    // Resume background music when video pauses
+    if (music && music.paused) {
+      music.play();
+    }
+  }
+}
+
+function restartPhotoVideo() {
+  if (!photoVideo) return;
+  
+  photoVideo.currentTime = 0;
+  photoVideo.play();
+  document.getElementById('photosPlayBtn').innerHTML = '⏸';
+  
+  // Pause background music when video plays
+  if (music && !music.paused) {
+    music.pause();
+  }
+}
+
+function updatePhotoVideoTime() {
+  if (!photoVideo) return;
+  
+  const timeDisplay = document.getElementById('photosTime');
+  if (!timeDisplay) return;
+  
+  const currentTime = formatTime(photoVideo.currentTime);
+  const duration = formatTime(photoVideo.duration || 0);
+  timeDisplay.textContent = `${currentTime} / ${duration}`;
+}
+
+// TIME FORMATTING FUNCTION
+function formatTime(seconds) {
+  if (isNaN(seconds)) return "0:00";
+  const mins = Math.floor(seconds / 60);
+  const secs = Math.floor(seconds % 60);
+  return `${mins}:${secs < 10 ? '0' : ''}${secs}`;
+}
+
+// SCREEN NAVIGATION
+function nextScreen() {
+  console.log("nextScreen called from screen:", currentScreen + 1);
+  
+  // Check if popup is open
+  if (isPopupOpen) {
+    console.log("Popup is open, closing it first...");
+    closeFlowerMessage();
+    // Try again after a short delay
+    setTimeout(function() {
+      console.log("Retrying nextScreen after closing popup");
+      proceedToNextScreen();
+    }, 100);
+    return;
+  }
+  
+  // Pause videos if moving away from video screens
+  if (currentScreen === 4 && photoVideo && !photoVideo.paused) {
+    photoVideo.pause();
+    document.getElementById('photosPlayBtn').innerHTML = '▶';
+  }
+  
+  // Resume background music if moving away from video screens
+  if (currentScreen === 4 && music && music.paused) {
+    music.play();
+  }
+  
+  proceedToNextScreen();
+}
+
+function proceedToNextScreen() {
+  // Hide current screen
+  if (screens[currentScreen]) {
+    screens[currentScreen].classList.remove("active");
+  }
+  if (dots[currentScreen]) {
+    dots[currentScreen].classList.remove("active");
+  }
+  
+  // Go to next screen
+  currentScreen++;
+  
+  // If at the end, stay at last screen
+  if (currentScreen >= screens.length) {
+    currentScreen = screens.length - 1;
+    console.log("Reached last screen");
+  }
+  
+  // Show next screen
+  updateScreen();
+}
+
+function updateScreen() {
+  if (screens[currentScreen]) {
+    screens[currentScreen].classList.add("active");
+  }
+  if (dots[currentScreen]) {
+    dots[currentScreen].classList.add("active");
+  }
+  
+  console.log("Now on screen:", currentScreen + 1);
+  
+  // Start music on first transition
+  if (currentScreen === 1 && music && music.paused) {
+    tryAutoPlayMusic();
+  }
+  
+  // Update personalized content
+  updatePersonalizedContent();
+}
+
+// UPDATE PERSONALIZED CONTENT
+function updatePersonalizedContent() {
+  // Update birthday text on screen 3
+  if (currentScreen === 2 && userName) {
+    const bdayText = document.getElementById("bdayText");
+    if (bdayText) {
+      bdayText.innerText = `Happy Birthday, ${userName}! 🎉`;
+    }
+  }
+  
+  // Update name in message on screen 7
+  if (currentScreen === 6) {
+    const userNameElement = document.getElementById("userName");
+    if (userNameElement && userName) {
+      userNameElement.textContent = userName;
+    }
+    
+    const birthdayBadge = document.getElementById("birthdayName");
+    if (birthdayBadge && userName) {
+      birthdayBadge.innerText = `Happy 21st Birthday, ${userName}! 🎉`;
+    }
+  }
+  
+  // Update final screen on screen 8
+  if (currentScreen === 7) {
+    const finalText = document.getElementById("finalText");
+    const finalMessage = document.getElementById("finalMessage");
+    
+    if (finalText && userName) {
+      finalText.innerText = `Thank You ${userName || 'Magie'}! 💖`;
+    }
+    
+    if (finalMessage) {
+      finalMessage.innerHTML = 
+        `Thank you for experiencing this special birthday surprise${userName ? `, ${userName}` : ', Magie'}! I hope it brought a smile to your face and warmth to your heart. Always remember that you are an amazing person who deserves all the happiness in the world! 🥰✨
+        
+        <p style="margin-top: 20px; font-size: 20px; color: #ff69b4;">
+          Happy 21st Birthday, ${userName || 'Magie'}! 🎂🎉
+        </p>`;
+    }
+  }
+}
+
+// SAVE NAME FUNCTION
+function saveName() {
+  const nameInput = document.getElementById("nameInput");
+  if (!nameInput) return;
+  
+  userName = nameInput.value.trim();
+  
+  if (!userName) {
+    alert("Please enter your name!");
+    return;
+  }
+  
+  console.log("Name saved:", userName);
+  nextScreen();
+}
+
+// FLOWER MESSAGE FUNCTIONS
+function showFlowerMessage(flowerNumber) {
+  const message = flowerMessages[flowerNumber];
+  if (!message) return;
+  
+  const overlay = document.getElementById('overlay');
+  const messageCard = document.getElementById('flowerMessageCard');
+  
+  if (!overlay || !messageCard) return;
+  
+  // Update message content
+  document.getElementById('flowerMessageNumber').textContent = message.number;
+  document.getElementById('flowerMessageTitle').textContent = message.title;
+  document.getElementById('flowerMessageContent').textContent = message.content;
+  
+  // Update quotes
+  const quotesContainer = document.getElementById('flowerMessageQuotes');
+  if (quotesContainer && message.quotes.length > 0) {
+    quotesContainer.innerHTML = message.quotes.map(quote => 
+      `<div class="quote-item">${quote}</div>`
+    ).join('');
+    quotesContainer.style.display = 'block';
+  } else if (quotesContainer) {
+    quotesContainer.style.display = 'none';
+  }
+  
+  // Show popup
+  overlay.classList.add('active');
+  messageCard.classList.add('active');
+  isPopupOpen = true;
+  
+  console.log("Flower popup opened");
+}
+
+function closeFlowerMessage() {
+  const overlay = document.getElementById('overlay');
+  const messageCard = document.getElementById('flowerMessageCard');
+  
+  if (overlay) overlay.classList.remove('active');
+  if (messageCard) messageCard.classList.remove('active');
+  
+  isPopupOpen = false;
+  console.log("Flower popup closed");
+}
+
+// MUSIC FUNCTIONS
+function toggleMusic() {
+  const muteBtn = document.querySelector(".mute");
+  
+  if (!music) return;
+  
+  if (music.paused) {
+    music.play().then(() => {
+      muteBtn.innerText = "🔊";
+      document.getElementById('musicFallback').style.display = 'none';
+    }).catch(e => {
+      console.log("Cannot play music:", e);
+    });
+  } else {
+    music.pause();
+    muteBtn.innerText = "🔇";
+  }
+}
+
+// Add click event to entire document to try playing music
+document.addEventListener('click', function once() {
+  if (music && music.paused) {
+    music.play().catch(e => console.log("Still can't play"));
+  }
+  document.removeEventListener('click', once);
+}, { once: true });
+</script>
+
+</body>
+</html>
